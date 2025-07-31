@@ -56,9 +56,9 @@ npm run dev
 Essentials:
 - [ ] Landing page
 - [ ] Feature inventory
-- [ ] Add an item to the inventory
-- [ ] Remove an item from the inventory
-- [ ] Modify an item
+- [x] Add an item to the inventory
+- [x] Remove an item from the inventory
+- [x] Modify an item
 - [ ] Add a picture from a local directory
 - [ ] Preview pictures
 - [ ] Wishlist
