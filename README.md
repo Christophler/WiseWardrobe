@@ -42,10 +42,20 @@ Log your clothing items, categorize them by type, color, and even create outfit 
     ````sh
     npm ci nodemon -D
     ````
+- chakra-ui v2
+    ````sh
+    npm i @chakra-ui/react@v2.10.3 @emotion/react @emotion/styled framer-motion
+    npm i @chakra-ui/icons@v2.1.1
+    ````
+- react router
+    ````sh
+    npm i react-router-dom
+    ````
 
 
 ### Starting the web server locally on port 5000
 ````sh
+cd .\client\
 npm run dev
 ````
 
@@ -70,3 +80,4 @@ Additional QOL:
 - [ ] Create outfit combinations
 - [ ] Save outfit combinations
 - [ ] User login
+- [ ] Use an ML object identification to automatically organize and sort inventory items.
