@@ -45,11 +45,14 @@ Log your clothing items, categorize them by type, color, and even create outfit 
 - chakra-ui v2
     ````sh
     npm i @chakra-ui/react@v2.10.3 @emotion/react @emotion/styled framer-motion
-    npm i @chakra-ui/icons@v2.1.1
     ````
 - react router
     ````sh
     npm i react-router-dom
+    ````
+- react icons
+    ````sh
+    npm i react-icons --save
     ````
 
 
