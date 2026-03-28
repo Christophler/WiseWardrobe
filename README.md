@@ -30,33 +30,37 @@ Log your clothing items, categorize them by type, color, and even create outfit 
 ## Getting Started
 
 ### Prerequisites
-- npm
+- Ensure npm is installed
     ````sh
     npm ci npm@latest -g
     ````
-- express, mongoose, and dotenv libraries
+- Install all required libraries
     ````sh
-    npm ci express mongoose dotenv
+    npm i --prefix client
+    npm i --prefix server
     ````
+
+#### Frontend Libraries
+- express
+- mongoose
+- dotenv
 - nodemon
-    ````sh
-    npm ci nodemon -D
-    ````
+- nodemon
+
+#### Backend Libraries
 - chakra-ui v2
-    ````sh
-    npm i @chakra-ui/react@v2.10.3 @emotion/react @emotion/styled framer-motion
-    ````
 - react router
-    ````sh
-    npm i react-router-dom
-    ````
 - react icons
-    ````sh
-    npm i react-icons --save
-    ````
+- zustand
 
 
-### Starting the web server locally on port 5000
+### Starting the Express backend server locally on port 5000
+````sh
+cd .\server\
+npm run dev
+````
+
+### Starting the Vite frontend server locally on port 5173
 ````sh
 cd .\client\
 npm run dev
