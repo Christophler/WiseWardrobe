@@ -18,9 +18,20 @@ export const useProductStore = create((set) => ({
         set((state) => ({products: [...state.products, data.data] }))
         return {success: true, message: "Product created successfully."}
     },
-    fetchProducts: async() => {
+    fetchProducts: async () => {
         const res = await fetch("/api/products");
         const data = await res.json();
         set({ products: data.data });
+    },
+    deleteProduct: async (prodId) => {
+        const res = await fetch(`/api/products/${prodId}`, {
+            method: "DELETE",
+        });
+        const data = await res.json();
+        if (!data.success) return {success: false, message: data.message};
+
+        // Deleting the current product from the state to update the UI in real time
+        set(state => ({products: state.products.filter(product => product._id !== prodId)}));
+        return {success: true, message: "Product deleted successfully."}
     }
 }))
