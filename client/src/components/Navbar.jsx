@@ -1,11 +1,11 @@
-import { Button, Container, Flex, HStack, Text, useColorMode } from '@chakra-ui/react'
+import { Button, Container, Flex, HStack, Text, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { FiPlusSquare, FiMoon, FiSun } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Container maxW={"1140px"} px={4} >  {/* Max width and padding x */}
+    <Container maxW={"false"} px={4} bg={useColorModeValue("gray.200", "gray.800")}>  {/* Max width of window and padding x */}
       <Flex
       h={16}
       alignItems={"center"}
@@ -22,7 +22,7 @@ const Navbar = () => {
 					bgGradient={"linear(to-r, #1991e0, #0c00fa)"}
 					bgClip={"text"}
         >
-          <Link to={"/"}>WiseWardrobe 👕</Link>
+          <Link to={"/"}>WiseWardrobe 🧥</Link>
         </Text>
 
         <HStack spacing={2} alignItems={"center"}>
