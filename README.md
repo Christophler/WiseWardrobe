@@ -72,12 +72,12 @@ npm run dev
 ## Roadmap
 Essentials:
 - [ ] Landing page
-- [ ] Feature inventory
+- [x] Feature inventory
 - [x] Add an item to the inventory
 - [x] Remove an item from the inventory
 - [x] Modify an item
 - [ ] Add a picture from a local directory
-- [ ] Preview pictures
+- [x] Preview pictures
 - [ ] Wishlist
 
 Additional QOL:
